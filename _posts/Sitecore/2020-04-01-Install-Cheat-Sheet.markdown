@@ -55,5 +55,7 @@ Great! The most elusive pre-requisites are all done now. This is assuming you ha
 3. Edit the XP0-SingleDeveloper.ps1 to use all your environment specific variables and file locations. All variables set in this script will be propogated across every other installation file.
 4. By the end, the installation directory should look similar to the below screenshot:
 ![Expected-Directory-Structure]({{ site.baseurl }}/images/posts/2020-04-01-Install-Cheat-Sheet/InstallFolder.jpg){:class="img-responsive"}
-5. Open a powershell command prompt with adminsitrator priviliges, and run `.\XP0-SingleDeveloper.ps1` from within the directory we set up in the last few steps.
+5. Open a powershell command prompt with adminsitrator priviliges.
+6. First, run `Install-SitecoreConfiguration -Path .\Prerequisites.json` from within the installation directory. Yes, I know this is called pre-requisites, but it's so late in the process I'd barely call it pre-requisites.
+7. After that is complete, run `.\XP0-SingleDeveloper.ps1` from within the installation directory.
 6. Grab a coffee, it can take a while to go through the entire installation script.
