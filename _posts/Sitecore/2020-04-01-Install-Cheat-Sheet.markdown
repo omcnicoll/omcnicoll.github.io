@@ -54,6 +54,6 @@ Great! The most elusive pre-requisites are all done now. This is assuming you ha
 2. Copy a version of your license.xml file into the previous directory.
 3. Edit the XP0-SingleDeveloper.ps1 to use all your environment specific variables and file locations. All variables set in this script will be propogated across every other installation file.
 4. By the end, the installation directory should look similar to the below screenshot:
-![Expected-Directory-Structure]({{ site.baseurl }}/images/posts/2020-04-01-install-cheat-sheet/InstallFolder.jpg){:class="img-responsive"}
+![Expected-Directory-Structure]({{ site.baseurl }}/images/posts/2020-04-01-Install-Cheat-Sheet/InstallFolder.jpg){:class="img-responsive"}
 5. Open a powershell command prompt with adminsitrator priviliges, and run `.\XP0-SingleDeveloper.ps1` from within the directory we set up in the last few steps.
 6. Grab a coffee, it can take a while to go through the entire installation script.
