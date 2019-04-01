@@ -15,9 +15,9 @@ As a result, I've compiled the key steps I follow for a quick and easy installat
   - I recommend unzipping the downloaded Solr to C:\Solr-7.2.1
 3. Setup SOLR to run as a service with NSSM
   - [NSSM](https://nssm.cc/download) makes our lives extremely easy here. Simply download NSSM, start a command prompt as an administrator, and run `NSSM.exe install solr721`. This will open up a simple dialog box for the service settings. If you followed the earlier step, the Path field should point to `C:\Solr-7.2.1\bin\solr.cmd`. The startup directory will be automatically filled, and the arguments should be `start -f -p 8983`. The arguments are very important, specifically the `-f` flag, as I have heard stories of Solr not working correctly otherwise and days lost to debugging.
-  ![image-title-here](/images/posts/2020-04-01-install-cheat-sheet/nssm.jpg){:class="img-responsive"}
+  ![image-title-here]({{ site.url }}/images/posts/2020-04-01-install-cheat-sheet/nssm.jpg){:class="img-responsive"}
 4. Enable SSL for Solr
-  - This is one time where it's just not worth the trouble to complete all the steps yourself. Save yourself the time and use the scripts graciously supplied by Kam Figy [here](https://kamsar.net/index.php/2017/10/Quickly-add-SSL-to-Solr/)
+  - This is one time where it's just not worth the trouble to complete all the steps yourself. Save yourself the time and use the scripts graciously supplied by Kam Figy [here](https://kamsar.net/index.php/2017/10/Quickly-add-SSL-to-Solr/).
   - Note: I've found that sometimes the script complains about not finding the keygen.exe. In that case, I just edit the exe path directly into the script and it works no problem.
   - Also note: You will probably need to restart the Solr service after executing this script before you can confirm it's working correctly with SSL.
 5. Enable Contained Database Authentication
@@ -54,6 +54,6 @@ Great! The most elusive pre-requisites are all done now. This is assuming you ha
 2. Copy a version of your license.xml file into the previous directory.
 3. Edit the XP0-SingleDeveloper.ps1 to use all your environment specific variables and file locations. All variables set in this script will be propogated across every other installation file.
 4. By the end, the installation directory should look similar to the below screenshot:
-![image-title-here](/images/posts/2020-04-01-install-cheat-sheet/InstallFolder.jpg){:class="img-responsive"}
+![image-title-here]({{ site.url }}/images/posts/2020-04-01-install-cheat-sheet/InstallFolder.jpg){:class="img-responsive"}
 5. Open a powershell command prompt with adminsitrator priviliges, and run `.\XP0-SingleDeveloper.ps1` from within the directory we set up in the last few steps.
 6. Grab a coffee, it can take a while to go through the entire installation script.
