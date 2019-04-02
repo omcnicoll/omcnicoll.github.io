@@ -55,9 +55,12 @@ pre.highlight code,
   display: block;
   margin: auto;
   position: relative;
-  width: 26%;
+  width: 100%;
   height: auto;
   border-radius:25px;
+  @media (min-width: 960px) {
+    width: 26%;
+  }
 }
 
 .sidebar-image {
