@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Sitecore 9 Service Cleanup"
 date:   2019-03-29 11:04:24 -0400
 categories: Sitecore

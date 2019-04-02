@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Sitecore 9.1 Install Cheat Sheet"
 date:   2019-04-01 11:04:24 -0400
 categories: Sitecore
