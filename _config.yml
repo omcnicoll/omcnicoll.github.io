@@ -3,7 +3,7 @@ title: Olmec Dev
 description: 'Thinking space for Sitecore development'
 url: 'https://omcnicoll.github.io/'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-137537427-1'
 disqus_shortname: 'olmec-dev'
 
 author:
