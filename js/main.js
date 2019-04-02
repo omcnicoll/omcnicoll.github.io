@@ -5,6 +5,8 @@ sitemap:
 ---
 
 $(document).ready(function () {
+  $('.main-post-list').hide()
+  $('.whoami').hide()
   $('a.blog-button').click(function (e) {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
@@ -17,8 +19,17 @@ $(document).ready(function () {
     }
   })
 
-  if (window.location.hash && window.location.hash == '#blog') {
-    $('.panel-cover').addClass('panel-cover--collapsed')
+  if (window.location.hash) {
+    if(window.location.hash == '#blog'){
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.main-post-list').show()
+      $('.whoami').hide()
+    }
+    if(window.location.hash == '#whoami'){
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.main-post-list').hide()
+      $('.whoami').show()
+    }
   }
 
   if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
@@ -36,3 +47,38 @@ $(document).ready(function () {
   })
 
 })
+
+$(window).on('hashchange', function() {
+  if (window.location.hash) {
+    /*if(window.location.hash == '#blog'){
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.whoami').animate({
+        left: '-20em',
+        opacity: 0
+      }, 'slow', hideElement($('.whoami')));
+
+      $('.main-post-list').css('left', '20em')
+      $('.main-post-list').css('opacity', '0')
+      $('.main-post-list').show()
+      $('.main-post-list').animate({
+        left: '0em',
+        opacity: 1
+      }, 'slow', hideElement($('.whoami')));
+    }*/
+    if(window.location.hash == '#blog'){
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.whoami').fadeOut("slow",function(){
+        $('.main-post-list').fadeIn()
+      });
+    }
+    if(window.location.hash == '#whoami'){
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.main-post-list').fadeOut("slow",function(){
+        $('.whoami').fadeIn()
+      });
+    }
+  }
+  else{
+    $('.panel-cover').removeClass('panel-cover--collapsed')
+  }
+});
