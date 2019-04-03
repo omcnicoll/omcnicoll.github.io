@@ -31,6 +31,10 @@ $(document).ready(function () {
       $('.whoami').show()
     }
   }
+  if(window.location.pathname.split('/').length > 3){
+    $('.base-nav').hide()
+    $('.post-nav').show()
+  }
 
   if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
@@ -50,21 +54,6 @@ $(document).ready(function () {
 
 $(window).on('hashchange', function() {
   if (window.location.hash) {
-    /*if(window.location.hash == '#blog'){
-      $('.panel-cover').addClass('panel-cover--collapsed')
-      $('.whoami').animate({
-        left: '-20em',
-        opacity: 0
-      }, 'slow', hideElement($('.whoami')));
-
-      $('.main-post-list').css('left', '20em')
-      $('.main-post-list').css('opacity', '0')
-      $('.main-post-list').show()
-      $('.main-post-list').animate({
-        left: '0em',
-        opacity: 1
-      }, 'slow', hideElement($('.whoami')));
-    }*/
     if(window.location.hash == '#blog'){
       $('.panel-cover').addClass('panel-cover--collapsed')
       $('.whoami').fadeOut("slow",function(){
