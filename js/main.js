@@ -36,6 +36,11 @@ $(document).ready(function () {
     $('.post-nav').show()
   }
 
+  if(document.referrer.includes('{{ site.url }}')){
+    $('a').attr("href", document.referrer + '#blog')
+    $('.referrer-back-link').show()
+  }
+
   if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
