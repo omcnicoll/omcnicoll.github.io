@@ -37,7 +37,7 @@ $(document).ready(function () {
   }
 
   if(document.referrer.includes('{{ site.url }}')){
-    $('a').attr("href", document.referrer + '#blog')
+    $('.referrer-back-link').attr("href", document.referrer + '#blog')
     $('.referrer-back-link').show()
   }
 
