@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "The SXA Way"
+title:  "The SXA Way | Series Intro"
 date:   2019-04-01 11:04:24 -0400
 categories: Sitecore
 ---

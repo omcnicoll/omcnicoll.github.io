@@ -20,6 +20,6 @@ There are a few ways to fix this.
 
 The first option is easier, however please note that you will need to change the startup type from **Automatic** to **Manual** as well, otherwise on computer restart the service will restart as well, bringing you to the same state of crippled performance.
 
-The second option is preferred in the case of failed installations, or simply old sitecore instances, since the services will not be deleted automatically. To do so, simply find the name of the service, open a command prompty with administrator priviliges, and execute the following command: `sc delete service_name`. This command should return a result message to alert you as to whther the delete was succesful or not.
+The second option is preferred in the case of failed installations, or simply old sitecore instances, since the services will not be deleted automatically. To do so, simply find the name of the service, open a command prompt with administrator privileges, and execute the following command: `sc delete service_name`. This command should return a result message to alert you as to whether the delete was successful or not.
 
 If this doesn't help your environment run faster or you have additional ideas to improve performance, leave a comment!

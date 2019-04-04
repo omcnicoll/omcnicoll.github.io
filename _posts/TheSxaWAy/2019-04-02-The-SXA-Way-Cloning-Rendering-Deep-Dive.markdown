@@ -6,7 +6,7 @@ date:   2019-04-02 11:04:24 -0400
 categories: Sitecore
 ---
 
-Our adventure begins directly after the sucessful installation of SXA 1.8. While we could take a look at what SXA offers out of the box, as a developer, I always find that getting my hands dirty allows me to learn the fastest. With that in mind, we're going to go ahead and create a new Hero rendering. This rendering (for now) will be a simple image spanning the width of the viewport with a title field.
+Our adventure begins directly after the successful installation of SXA 1.8. While we could take a look at what SXA offers out of the box, as a developer, I always find that getting my hands dirty allows me to learn the fastest. With that in mind, we're going to go ahead and create a new Hero rendering. This rendering (for now) will be a simple image spanning the width of the viewport with a title field.
 
 Traditionally in Sitecore development, you would begin by creating your template and rendering items manually, but this is SXA, and luckily for us Sitecore powershell extensions now run supreme. As such, our first step will be to use a script to clone the promo rendering.[*Why are we cloning promo?*]({{ site.baseurl }}/2019/Why-Clone-Promo/)
 
@@ -41,9 +41,10 @@ So, to recap, from top to bottom, the following items were created:
 
 Most of that makes sense, except for lines 1-10. *What are these items? Do we need them?*. While they are not completely necessary for single site solutions, they ensure that your new SXA component is compatible with the SXA site creation script. What these items enable is the scaffolding setup when creating a new site. In this example, since we added the hero to the **Page Content** module, those two items will make sure that the hero is added as an available rendering in future sites, and that the data folder will be prepoulated with a default rendering variant. Great! So it all works? Nope... while that gets setup for future sites, we still need to do this manually for our own site. To complete this setup:
 1. Navigate to `/sitecore/content/tenant/site/presentation/available renderings/page content`
-2. Edit the **Renderings** field and add the previosuly created **Hero** rendering
+2. Edit the **Renderings** field and add the previously created **Hero** rendering
 3. Navigate to  `/sitecore/content/tenant/site/presentation/rendering variants`
 4. Right click on the Promo rendering variant folder, duplicate, and name **Hero**
+5. Navigate to  `/sitecore/content/tenant/site/data` and insert a hero datasource item folder. The folder template was created by the script earlier and is found next to all other generated hero templates
 
 
 Great! We've now cloned the promo and created our own hero component. To test and make sure it works correctly, you can open a new blank SXA page in Experience Editor, and you should find the **Hero** component as a drag and drop option under **Page Content**. Of course, right now we're still using the promo template and rendering variant markup. Part two will be looking at how to update that markup and finish our new component.
