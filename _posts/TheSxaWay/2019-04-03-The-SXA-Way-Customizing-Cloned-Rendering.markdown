@@ -71,7 +71,7 @@ Great! Now I'll just add some super barebones CSS to make it appear a bit like a
 }
 {% endhighlight %}
 
-Finally, lets go take a look in the experience editor. After we drag and drop the hero component onto the page, you should be able to inspect and see all the markup is present as we would expect it to be. The title field is hard to see because the background is white, but a bit  of clicking will allow you to find the title and edit it. For the image however, we don't have any way to edit it from the experience editor yet, so we will go in and edit the related item. After setting the image and setting the title, you should have a barebones hero as seen below.
+Finally, lets go take a look in the experience editor. After we drag and drop the hero component onto the page, you should be able to inspect and see all the markup is present as we would expect it to be. The title field is hard to see because the background is white, but a bit  of clicking will allow you to find the title and edit it. For the image however, we don't have any way to edit it from the experience editor yet, so we will go in and edit the related item. After setting the image and setting the title, you should have a barebones hero as seen below. *Note: By no means am I a designer, I'm just here to demonstrate the techniques.*
 
 
 ![Basic-Hero-Rendering]({{ site.baseurl }}/images/posts/2019-04-03-The-SXA-Way-Customizing-Cloned-Rendering/HeroBasic.jpg){:class="img-responsive"}
