@@ -1,7 +1,7 @@
 # Site settings
 title: Olmec Dev
 description: 'Thinking space for Sitecore development'
-url: 'https://olmecdev'
+url: 'https://olmecdev.com'
 baseurl: ''
 google_analytics: 'UA-137537427-1'
 disqus_shortname: 'olmec-dev'
