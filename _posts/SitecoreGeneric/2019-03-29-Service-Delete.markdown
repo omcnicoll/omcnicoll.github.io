@@ -4,6 +4,7 @@ comments: true
 title:  "Sitecore 9 Service Cleanup"
 date:   2019-03-29 11:04:24 -0400
 categories: Sitecore
+tags: Sitecore Performance
 ---
 Congratulations, you've just completed your first (or more) installation of Sitecore 9! The site comes up, but you're noticing that your computer is running much slower than before. You take a quick look at your running services and notice java is taking up 90% of your CPU. What gives?
 

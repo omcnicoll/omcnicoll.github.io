@@ -1,9 +1,10 @@
 ---
 layout: post
 comments: true
-title:  "The SXA Way | Customizing Your Cloned Rendering"
+title:  "Customizing Your Cloned Rendering"
 date:   2019-04-03 11:04:24 -0400
 categories: Sitecore
+tags: Sitecore-9.1 SXA-1.8 The-SXA-Way
 ---
 Now that we have our own custom cloned rendering, it's time to actually make it look how we want it to. The first step in doing this would be to head over to the auto-created template and adjust the fields as needed. Following through with the previous post, we will be continuing to create a basic **Hero** component, for which we will only need two fields: a background image field and a title field.
 

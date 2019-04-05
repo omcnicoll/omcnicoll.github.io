@@ -4,6 +4,7 @@ comments: true
 title:  "Why Does Everyone Clone Promo?"
 date:   2019-04-02 11:00:24 -0400
 categories: Sitecore
+tags: Sitecore-9.1 SXA-1.8
 ---
 If you've done any custom SXA development, you'll know that the first step to creating a custom rendering is to clone the promo component. *What's so special about the Promo?* you may be asking yourself, and I'm here to tell you. To best understand why, we'll take a look at what the Promo view looks like.
 

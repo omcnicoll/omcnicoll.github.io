@@ -1,9 +1,10 @@
 ---
 layout: post
 comments: true
-title:  "The SXA Way | Cloning a Rendering"
+title:  "Cloning An SXA Rendering"
 date:   2019-04-02 11:04:24 -0400
 categories: Sitecore
+tags: Sitecore-9.1 SXA-1.8 The-SXA-Way
 ---
 
 Our adventure begins directly after the successful installation of SXA 1.8. While we could take a look at what SXA offers out of the box, as a developer, I always find that getting my hands dirty allows me to learn the fastest. With that in mind, we're going to go ahead and create a new Hero rendering. This rendering (for now) will be a simple image spanning the width of the viewport with a title field.

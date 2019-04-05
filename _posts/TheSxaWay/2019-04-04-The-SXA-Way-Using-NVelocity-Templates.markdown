@@ -1,9 +1,10 @@
 ---
 layout: post
 comments: true
-title:  "The SXA Way | Using NVelocity Templates"
+title:  "Using NVelocity Templates With SXA"
 date:   2019-04-04 11:04:24 -0400
 categories: Sitecore
+tags: Sitecore-9.1 SXA-1.8 The-SXA-Way NVelocity
 ---
 Now that we've seen how to render multilists using reference items, and we've also seen the amount of extra markup it creates, lets take a look at the other option for generating more complex markup within rendering variants: NVelocity templates. Before we begin though, there are a few important points I'd like to note.
 

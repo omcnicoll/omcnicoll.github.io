@@ -4,6 +4,7 @@ comments: true
 title:  "The SXA Way | Series Intro"
 date:   2019-04-01 11:04:24 -0400
 categories: Sitecore
+tags: Sitecore-9.1 SXA-1.8 The-SXA-Way
 ---
 *What does 'The SXA Way' even mean?*. Great question! As I was beginning development with SXA, I noticed everyone referencing *The SXA Way*, but I never actually understood what that means. No coding? How is that even possible! The thing about SXA though, is that once you understand how it works, you realize how easy it is. Getting to that point, however, proves to be easier said than done.
 

@@ -4,6 +4,7 @@ comments: true
 title:  "Sitecore 9.1 Install Cheat Sheet"
 date:   2019-03-31 11:04:24 -0400
 categories: Sitecore
+tags: Sitecore-9.1 Installation
 ---
 At first glance, Sitecore installations from version 9 onwards seemed unnecessarily complicated. I myself worked through a number of failed installations the first few times. Then tools like SIF-less were created to simplify the entire process, but I always preferred to install Sitecore myself.
 

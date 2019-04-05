@@ -1,9 +1,10 @@
 ---
 layout: post
 comments: true
-title:  "The SXA Way | Displaying Multilists In Rendering Variants"
+title:  "Displaying Multilists In Rendering Variants"
 date:   2019-04-04 11:04:24 -0400
 categories: Sitecore
+tags: Sitecore-9.1 SXA-1.8 The-SXA-Way
 ---
 In the previous rendering customization post, we went over a very simple hero rendering with only two basic fields. What if we wanted to make this rendering more complex though? Say we want to add some CTA buttons, how would we go about doing that with rendering variants? Let's take a look at our options.
 

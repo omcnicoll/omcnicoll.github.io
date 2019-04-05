@@ -31,7 +31,7 @@ $(document).ready(function () {
       $('.whoami').show()
     }
   }
-  if(window.location.pathname.split('/').length > 3){
+  if((window.location.pathname.split('/').length > 3) || window.location.pathname.includes('tags')){
     $('.base-nav').hide()
     $('.post-nav').show()
   }
