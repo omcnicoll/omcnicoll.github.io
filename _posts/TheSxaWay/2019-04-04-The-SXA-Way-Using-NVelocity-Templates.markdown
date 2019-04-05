@@ -47,7 +47,7 @@ $item.Fields.get_Item("CTALinks")
 {% endhighlight %}
 *Apologies if its hard to read, I haven't looked into overriding the default rouge highlighting or adding a specific NVelocity language highlighter*
 
-With that quick review complete, these links look easy to do! We'll just do a foreach, loop through the CTALink items, and create the anchor tag for each of them, right? Nope. When we loop through the $item.CTALinks field, we're not actually looping through the collection of items, we're looping through the raw value string, which means every iteration of the foreach is for a letter, not an item. Additionally, even if we were able to get the link items, we wouldn't be able to access the target URL and link description seperately. The solution to all of this? We will write our own custom token replacement methods.
+With that quick review complete, these links look easy to do! We'll just do a foreach, loop through the CTALink items, and create the anchor tag for each of them, right? Nope. When we loop through the $item.CTALinks field, we're not actually looping through the collection of items, we're looping through the raw value string, which means every iteration of the foreach is for a letter, not an item. Additionally, even if we were able to get the link items, we wouldn't be able to access the target URL and link description separately. The solution to all of this? We will write our own custom token replacement methods.
 
 
 To get an idea for what methods we want to write, lets think about the three things we've just decided we're missing.
