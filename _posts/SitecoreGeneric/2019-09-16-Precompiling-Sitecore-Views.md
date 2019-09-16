@@ -55,7 +55,7 @@ On the opposite side, you're likely to go through this if you're unlucky, or hav
 1. Download the RazorGenerator.Mvc nuget package into each project with views you wish to precompile.
 2. [Install the Razor Generator visual studio extension found here.](https://marketplace.visualstudio.com/items?itemName=DavidEbbo.RazorGenerator)
 3. Set all of your views to build action none.
-4. Set directives for the RazorGenerator extension. This can be included in each individual view, or as a directives file in each views folder. I've noticed some difficulty getting the directives file method to work consistently, and since views were being created via plop we decided it was easier to include the directives in each view, despite the higher inital startup time. YMMV, but I also ran into several errors if I didn't include all references in the directives. It seemed like the web.config was not being used for the precompilation, so I added all references from the web.config into the directives.
+4. Set directives for the RazorGenerator extension. This can be included in each individual view, or as a directives file in each views folder. I've noticed some difficulty getting the directives file method to work consistently, and since views were being created via plop we decided it was easier to include the directives in each view, despite the higher initial startup time. YMMV, but I also ran into several errors if I didn't include all references in the directives. It seemed like the web.config was not being used for the precompilation, so I added all references from the web.config into the directives.
 
 **When included in the view**
 {% highlight html %}
@@ -66,7 +66,7 @@ On the opposite side, you're likely to go through this if you're unlucky, or hav
 {% endhighlight %}
 
 
-**When included as a seperate RazorGenerator.Directives file in the views folder**
+**When included as a separate RazorGenerator.Directives file in the views folder**
 {% highlight csharp %}
 Generator: MvcView
 Imports: System.Linq, System.Web.Mvc, System.Web.Mvc.Ajax, System.Web.Mvc.Html, System.Web.Routing, Sitecore.Mvc, Sitecore.Mvc.Presentation, Sitecore.Globalization, Glass.Mapper.Sc.Web.Mvc
@@ -132,5 +132,5 @@ public static partial class GlassMapperScCustom
 }
 {% endhighlight %}
 
-Voila! Only 4x the work, but it works beautifully, and debatably better. The "easy path" has some problems using the 'Mvc.UsePhysicalViewsIfNewer' setting, and is also more difficult to troubleshoot, as the precompiled views are not included directly in the solution. This will also work on any remote build system, since the .cs files are already checked into source control and get easily compiled into the .dll. [For further documentation, the Razor Generaor github page also has some decent documentation.](https://github.com/RazorGenerator/RazorGenerator)
+Voila! Only 4x the work, but it works beautifully, and debatably better. The "easy path" has some problems using the 'Mvc.UsePhysicalViewsIfNewer' setting, and is also more difficult to troubleshoot, as the precompiled views are not included directly in the solution. This will also work on any remote build system, since the .cs files are already checked into source control and get easily compiled into the .dll. [For further documentation, the Razor Generator github page also has some decent documentation.](https://github.com/RazorGenerator/RazorGenerator)
 
