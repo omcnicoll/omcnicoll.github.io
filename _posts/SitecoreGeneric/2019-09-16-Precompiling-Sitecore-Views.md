@@ -62,7 +62,7 @@ On the opposite side, you're likely to go through this if you're unlucky, or hav
 @*Generator: MvcView
     Imports: System.Linq, System.Web.Mvc, System.Web.Mvc.Ajax, System.Web.Mvc.Html, System.Web.Routing, Sitecore.Mvc, Sitecore.Mvc.Presentation, Sitecore.Globalization, Glass.Mapper.Sc.Web.Mvc*@
 @using Glass.Mapper.Sc.Web.Mvc
-@model Fulton.Feature.Navigation.Models.ViewModels.HeaderViewModel
+@model Feature.Navigation.Models.ViewModels.HeaderViewModel
 {% endhighlight %}
 
 
