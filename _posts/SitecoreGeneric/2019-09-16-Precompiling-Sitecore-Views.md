@@ -45,7 +45,7 @@ You're likely to go through this if you're lucky and/or running the most basic S
 
 That was easy! You should then be able to decompile the .dll and find the source code for your pre-compiled views under 
 
-![Decompiled-precompiled-dll]({{ site.baseurl }}/images/posts/2019-09-16-Precompiling-Sitecore-Views/decompiled-dll.png){:class="img-responsive"}
+![Decompiled-precompiled-dll]({{ site.baseurl }}/images/posts/2019-09-16-Precompiling-Sitecore-Views/decompiled-dll.PNG){:class="img-responsive"}
 
 
 ### The hard path:
